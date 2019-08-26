@@ -30,8 +30,7 @@ labels = le.fit_transform(labels)
 
 for r in (None, "l1", "l2"):
     print("[INFO] training model with ‘{}‘ penalty".format(r))
-    model = SGDClassifier(loss="log", penalty=r, max_iter=10,
-    learning_rate="constant", eta0=0.01, random_state=42)
+    model = SGDClassifier(loss="log", penalty=r, max_iter=100, tol=1e-3, learning_rate="constant", eta0=0.01, random_state=42)
     model.fit(trainX, trainY)
     acc = model.score(testX, testY)
     print("[INFO] ‘{}‘ penalty accuracy: {:.2f}%".format(r, acc * 100))

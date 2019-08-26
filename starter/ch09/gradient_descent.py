@@ -50,7 +50,7 @@ print(classification_report(testY, preds))
 plt.style.use("ggplot")
 plt.figure()
 plt.title("Data")
-plt.scatter(testX[:, 0], testX[:, 1], marker="o", c=testY, s=30)
+plt.scatter(testX[:, 0], testX[:, 1], marker="o", c=testY.reshape(500,), s=30)
 
 plt.style.use("ggplot")
 plt.figure()
