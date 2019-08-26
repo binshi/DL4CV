@@ -24,13 +24,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch09/sgd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="457">
+              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ch10/nn/perceptron.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch10/perceptron_or.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,6 +80,9 @@
         <option value="$PROJECT_DIR$/ch09/gradient_descent.py" />
         <option value="$PROJECT_DIR$/ch09/regularization.py" />
         <option value="$PROJECT_DIR$/ch09/sgd.py" />
+        <option value="$PROJECT_DIR$/ch10/perceptron.py" />
+        <option value="$PROJECT_DIR$/ch10/perceptron_or.py" />
+        <option value="$PROJECT_DIR$/ch10/nn/perceptron.py" />
       </list>
     </option>
   </component>
@@ -82,12 +106,13 @@
             <path>
               <item name="starter" type="b2602c69:ProjectViewProjectNode" />
               <item name="starter" type="462c0819:PsiDirectoryNode" />
-              <item name="ch07" type="462c0819:PsiDirectoryNode" />
+              <item name="ch10" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="starter" type="b2602c69:ProjectViewProjectNode" />
               <item name="starter" type="462c0819:PsiDirectoryNode" />
-              <item name="ch09" type="462c0819:PsiDirectoryNode" />
+              <item name="ch10" type="462c0819:PsiDirectoryNode" />
+              <item name="nn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +129,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ch10/nn" />
       <recent name="$PROJECT_DIR$/ch07/utilities/preprocessing" />
       <recent name="$PROJECT_DIR$/ch07/utilities/datasets" />
     </key>
@@ -120,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sgd">
+  <component name="RunManager" selected="Python.perceptron_or">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="starter" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,6 +173,9 @@
       <module name="starter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch09" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -162,32 +191,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="linearexample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="starter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch07" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch07/knn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="linearexample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="starter" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch08" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -203,10 +213,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="perceptron_or" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="starter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch10/perceptron_or.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="regularization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="starter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch09" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -226,6 +258,9 @@
       <module name="starter" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch09" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -243,11 +278,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.perceptron_or" />
         <item itemvalue="Python.sgd" />
         <item itemvalue="Python.regularization" />
         <item itemvalue="Python.gradient_descent" />
         <item itemvalue="Python.linearexample" />
-        <item itemvalue="Python.knn" />
       </list>
     </recent_temporary>
   </component>
@@ -266,20 +301,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15445000" />
+    <option name="totallyTimeSpent" value="17037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11927582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Python Console" visible="true" weight="0.319802" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -287,21 +316,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" side_tool="true" weight="0.32967034" />
-      <window_info anchor="right" id="SciView" visible="true" weight="0.32960597" />
-      <window_info anchor="right" id="Database" weight="0.32967034" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.319802" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.32960597" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="4" side_tool="true" weight="0.32967034" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32967034" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ch07/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ch07/__init__.py" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-1199943126/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -389,11 +422,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ch09/sgd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="457">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch10/perceptron_or.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch10/nn/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
