@@ -4,12 +4,12 @@ import numpy as np
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
-import matplotlib.pyplot as plt
+
 from ch07.utilities.datasets import SimpleDatasetLoader
 from ch07.utilities.preprocessing import SimplePreprocessor
 from ch12.utilities.nn.conv.shallownet import ShallowNet
 from ch12.utilities.preprocessing.imagetoarraypreprocessor import ImageToArrayPreprocessor
-
+import matplotlib.pyplot as plt
 
 print("[INFO] loading images...")
 imagePaths = list(paths.list_images("../../../DL4CVStarterBundle/Datasets/animals"))
@@ -33,6 +33,9 @@ model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy
 print("[INFO] training network...")
 H = model.fit(trainX, trainY, validation_data=(testX, testY), batch_size=32, epochs=100, verbose=1)
 
+print("[INFO] serializing network...")
+model.save("shallownet_animals")
+
 print("[INFO] evaluating network...")
 predictions = model.predict(testX, batch_size=32)
 print(classification_report(testY.argmax(axis=1), predictions.argmax(axis=1), target_names=["cat", "dog", "panda"]))
@@ -48,4 +51,3 @@ plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
 plt.legend()
 plt.show()
-

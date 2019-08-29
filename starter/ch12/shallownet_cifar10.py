@@ -1,15 +1,10 @@
-from imutils import paths
+
 from keras.datasets import cifar10
 from keras.optimizers import SGD
 import numpy as np
 from sklearn.metrics import classification_report
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
-
-from ch07.utilities.datasets import SimpleDatasetLoader
-from ch07.utilities.preprocessing import SimplePreprocessor
 from ch12.utilities.nn.conv.shallownet import ShallowNet
-from ch12.utilities.preprocessing.imagetoarraypreprocessor import ImageToArrayPreprocessor
 import matplotlib.pyplot as plt
 
 print("[INFO] loading CIFAR-10 data...")
