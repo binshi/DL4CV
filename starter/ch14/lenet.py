@@ -1,17 +1,6 @@
-from imutils import paths
 from keras import Sequential
 from keras import backend as K
 from keras.layers import Conv2D, Activation, MaxPooling2D, Flatten, Dense
-from keras.optimizers import SGD
-import numpy as np
-from sklearn.metrics import classification_report
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelBinarizer
-import matplotlib.pyplot as plt
-from ch07.utilities.datasets import SimpleDatasetLoader
-from ch07.utilities.preprocessing import SimplePreprocessor
-from ch12.utilities.nn.conv.shallownet import ShallowNet
-from ch12.utilities.preprocessing.imagetoarraypreprocessor import ImageToArrayPreprocessor
 
 class LeNet:
     @staticmethod
